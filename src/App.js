@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Content from "./components/Content";
 import "./App.css";
 
 function App() {
@@ -24,33 +27,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello Front-End !</h1>
-      <ul>
-        {movies.map((movie, index) => {
-          return (
-            <li key={movie}>
-              <span>{movie}</span>
-              <button
-                onClick={() => {
-                  axios.post("http://localhost:3100/delete/543436");
-                }}
-              >
-                Supprimer
-              </button>
-            </li>
-          );
-        })}
-      </ul>
-      <div>
-        {counters}
-        <button
-          onClick={() => {
-            setCounters(counters + 1);
-          }}
-        >
-          Increment
-        </button>
-      </div>
+      <Nav />
+      <Header />
+      <Content />
     </div>
   );
 }

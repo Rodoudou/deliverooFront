@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+.content {
+  background-color: #f3f5f5;
+}
+.Content--center {
+  margin: 0 auto;
+  width: 96vw;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.Menu {
+  flex: 1 1;
+  margin-right: 30px;
+  margin-bottom: -25px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.MenuItems--items {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.MenuItem {
+  width: 50%;
+  min-width: 300px;
+  padding: 0 10px 25px;
+}
+.MenuItem--texts h3 {
+  font-weight: 400;
+  margin: 0 0 0.5rem;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.MenuItem--card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  height: 160px;
+  width: 400px;
+  background: #fff;
+  padding: 15px;
+  align-items: flex-start;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.MenuItem--texts {
+  flex: 1 1;
+  margin-right: 15px;
+}
+
+.MenuItem--picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.MenuItem--texts p {
+  font-size: 0.9rem;
+  color: #808484;
+  line-height: 1.3rem;
+  height: 2.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 1rem;
+}
+
+.MenuItem--picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.MenuItem--infos {
+  display: flex;
+  align-items: center;
+}
+
+.MenuItem--price {
+  color: #808484;
+  font-size: 1.1rem;
+}
